@@ -29,6 +29,7 @@ type ProtocParsedFlags struct {
 	Include []string `short:"I" long:"proto_path"`
 	GoOut   string   `long:"go_out"`
 	GoOpt   []string `long:"go_opt"`
+	Plugin  []string `long:"plugin"`
 }
 
 func (p *ProtocPlugin) ComputeInputOutputFiles(opts plugins.GenerateOpts) *plugins.InputOutputFiles {
